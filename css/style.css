@@ -1,0 +1,326 @@
+
+/* 
+           public style
+    ***************************************
+*/    
+
+* , *:after , *:before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'PT Sans', sans-serif;
+    color: #fff;
+}
+a{
+    text-decoration: none;
+}
+ /* componanet style */
+ .pad{
+     padding: 30px 0;
+ }
+ .container{
+     width: 90%;
+     margin: 0 auto;
+ }
+ .unlisted{
+     list-style: none;
+ }
+.btn{
+    color: #fff;
+    border: none;
+    width: 100px;
+    height: 35px;
+    font-size: 17px;
+    border-radius: 3px;
+    margin-top: 5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    transition: .5s;
+    -webkit-transition: .5s;
+    -moz-transition: .5s;
+    -ms-transition: .5s;
+    -o-transition: .5s;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+h2.bold {
+    padding: 26px;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+.btn:hover{
+    transform: scale(1.2) ;
+    -webkit-transform: scale(1.2) ;
+    -moz-transform: scale(1.2) ;
+    -ms-transform: scale(1.2) ;
+    -o-transform: scale(1.2) ;
+   
+}
+/* 
+           header style
+    ***************************************
+*/ 
+ header{
+background-color: #F39189;
+ }
+ .header-content{
+  display: flex;
+ }
+ .logo{
+  max-width: 30%;
+ }
+ .logo img{
+max-width: 100%;
+/* max-height: 100%; */
+ }
+ nav{
+flex: 2;
+margin-top: 15px;
+ }
+ header nav ul{
+     
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     height: 100%;
+     text-align: center;
+    }
+header nav ul li a{
+     color: #fff;
+     text-transform: capitalize;
+     font-weight: bold;
+     font-size: 25px;
+
+ }
+header nav ul li:hover a{
+    border-bottom: 2px solid #fff;
+    padding: 5px;
+    transition:.2s ;
+    -webkit-transition:.2s ;
+    -moz-transition:.2s ;
+    -ms-transition:.2s ;
+    -o-transition:.2s ;
+}
+
+/* media quary forsection shop style */
+@media(max-width:767px) {
+.header-content {
+    flex-direction: column;
+    align-items: center;
+}
+header nav {
+    width: 100%;
+    
+}
+ header nav ul li  a{
+     font-size:17px;
+ }
+}
+
+/* 
+           section shop style
+    **********************************
+*/ 
+section.shop{
+    background-image: url(https://cdn.templates.unlayer.com/assets/1628404928107-banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 400px;
+    text-align: center;
+    position: relative;
+    color:black
+}
+.shop-content{
+    margin:auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    line-height: 1.7;
+    letter-spacing: 2px;
+    width: 100%;
+    text-align: center;
+}
+.shop-text{
+    font-weight: 600;
+    font-size: 25px;
+}
+.shop-head{
+    font-weight: bolder;
+    font-size: 40px;
+}
+.shop-btn{
+    background: black;
+       margin-top: 15px;
+}
+/* media quary forsection shop style */
+
+/* 
+           sction feature  style
+    ***************************************
+*/ 
+.feat{
+    background-color:#BB8082;
+    text-align: center;
+
+}
+
+.feat-groups{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:25px;
+    margin-top: 15px;
+}
+.feat-img img{
+    max-width: 100%;
+    transition: .2s;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+}
+.feat-img:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+}
+.feat-prod-info {
+    margin: 10px;
+}
+p.price {
+    margin: 5px;
+}
+button.btn.feat-btn {
+    background-color: #F39189;
+}
+/* media quary for section feature style */
+@media(max-width:767px){
+    .feat-groups{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap:25px;
+    margin-top: 15px;
+}
+}
+@media(max-width:575px){
+    .feat-groups{
+    display:grid;
+    grid-template-columns: 1fr;
+    grid-gap:25px;
+    margin-top: 15px;
+}
+}
+/* 
+           why section style
+    ***************************************
+*/ 
+section.pad.why {
+    background-color: #6E7582;
+    text-align: center;
+}
+.why-content {
+  display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 100px;
+}
+/* .why-img  {
+    max-height: 85%;
+} */
+.why-img img {
+    max-width: 100%;
+    max-height: 400px;
+    
+}
+.why-info{
+    text-align: center;
+}
+.why-head{
+    text-align: left;
+    margin-left: -20px;
+}
+li.list {
+    margin-bottom: 25px;
+    text-align: left;
+    margin-left: 70px;
+}
+p.list-text {
+    max-width: 350px;
+}
+/* media quary for section why style */
+@media(max-width:767px){
+    .why-content {
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-gap: 15px;
+    }
+}
+@media(max-width:575px){
+    li.list {
+        margin-bottom: 25px;
+        text-align: left;
+        margin-left: 30px;
+    }
+}
+
+/* 
+footer style
+***************************************
+*/ 
+footer{
+    background-color: #046582;
+    text-align: center;
+    line-height: 1.5;
+}
+.foot-group {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+
+footer .foot-group p{
+    max-width: 360px;
+}
+.foot-links i{
+    color: #fff;
+    font-size: 25px;
+    padding: 10px;
+    margin: 0 2px 3px;
+}
+footer .last-a{
+    color: #fff;
+    border-bottom: 2px solid;
+}
+/* media quary for section why style */
+@media(max-width:767px){
+    .foot-group{
+    flex-direction: column;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.foot-text {
+    margin-bottom: 30px;
+}
+.foot-contact {
+    margin-bottom: 25px;
+}
+    }
+
+
+
+/* 
+           media quary style
+    ***************************************
+        //extra small devices @media (maxwidth:575px)
+        //small devices @media (maxwidth:767px)
+        //medium devices @media (maxwidth:991px)
+        //large devices @media (maxwidth:1199px)
+*/ 
